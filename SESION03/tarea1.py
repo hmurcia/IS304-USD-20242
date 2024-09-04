@@ -6,5 +6,24 @@ Agregar metodos para aperturar cuentas, realizar consignaciones y retiros contro
 Crear un menú para crear objetos y realizar las diversas operaciones referidas.
 
 '''
+Erick Romo
 class CuentaBancaria:
+
+  def __init__(self,nuemroCta=None, nombreCliente=None, fechaApertura=None, saldo=None):
+   self.__numeroCta=numeroCta
+    self.__nombreCliente=nombreCliente
+    self.__fechaApertura=fechaApertura
+    self.__saldo=saldo
+
+def get_numeroCta(self):
+  return self.__numeroCta
+
+def get_fechaApertura(self):
+  return self.__fechaApertura
+
+def get_saldo(self):
+  return self.__saldo
   
+  
+  
+
