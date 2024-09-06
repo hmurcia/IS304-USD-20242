@@ -23,6 +23,49 @@ def get_fechaApertura(self):
 
 def get_saldo(self):
   return self.__saldo
+#getter
+
+def get_numeroCta(self:)
+                  return self.__numeroCta
+  def get_nombreCliente(self):
+    return self.__nombreCliente
+
+def get_fechaApertura(self):
+  return self.__fechaApertura
+
+def get_saldo(self):
+  return self.__saldo
+
+#metodo setter
+
+def set_numeroCta(self, numeroCta):
+  self.__numeroCta=numeroCta
+
+def set_nombreCliente(self, nombreCliente):
+   self.__nombreCliente=nombreCliente
+
+def set_fechaApertura(self, fechaApertura):
+  self.__fechaApertura=fechaApertura
+
+def set_saldo(self,saldo):
+  if saldo >= 0:
+    self.__saldo=saldo
+
+else:
+     print("El saldo no puede ser negativo")
+
+#Metodo para apertura una cuenta
+
+def apertura_cuenta(self, numeroCta, nombreCliente, fechaApertura, saldo):
+  if saldo >= 100000:
+
+    self.set_numeroCta(numeroCta)
+    self.set_nombreCliente(nombreCliente)
+    self.set_fechaApertura(fechaApertura)
+    self.set_saldo(saldo)
+    print("Cuenta aperturada satisfactoriamente")
+  else:
+    print("Su saldo inicial debe ser de al menos de 100,000 pesos")
   
   
   
