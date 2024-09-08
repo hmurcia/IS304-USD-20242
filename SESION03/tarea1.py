@@ -66,6 +66,31 @@ def apertura_cuenta(self, numeroCta, nombreCliente, fechaApertura, saldo):
     print("Cuenta aperturada satisfactoriamente")
   else:
     print("Su saldo inicial debe ser de al menos de 100,000 pesos")
+    #Metodo para realizar consignaciones
+
+def consignar(self,monto):
+  if monto > 0:
+    self.__saldo += monto
+    print(f"Tu consignación fue exitosa. Nuevo saldo: { self.__saldo}")
+  else:
+    print("El monto de tu consignacion debe ser positivo")
+
+
+    #Metodo para realizar retiros controlados 
+
+    def retirar(self,monto):
+      if monto > 0 and monto <= self.__saldo:
+        self.__saldo -= monto
+        print(f"Retiro exitoso. Su nuevo saldo: { self.__saldo}")
+      elif monto > self.__saldo:
+        print("Fondos insuficientes para realizar el retiro.")
+      else:
+        print("El monto del retiro debe ser positivo.")
+
+#Funcion para mostrar el menú
+def mostrar_menu():
+  
+        
   
   
   
