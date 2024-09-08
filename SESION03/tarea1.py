@@ -89,6 +89,52 @@ def consignar(self,monto):
 
 #Funcion para mostrar el menú
 def mostrar_menu():
+  print("\n--- Menú de Operaciones Bancarias ---")
+  print("1. Aperturar cuenta")
+  print("2. Consignar Dinero" )
+  print("3. Retirar dinero")
+  print("4. Consultar Saldo")
+  print("5. Salir")
+  opcion= int(input("Seleccione una opción:"))
+  return opcion
+
+#Función principal 
+def main():
+  cuenta = none
+  while = none
+  while True:
+    opcion = mostrar_menú()
+    
+    if opcion == 1:
+    numeroCta = input ("Ingrese el número de su cuenta")
+    nombreCliente = input ("Ingrese el número del cliente")
+    fechaApertura = input ("Ingrese la fecha de apertura (dd/mm/aaaa)")
+    saldo= float(input("Ingrese el saldo inicial: "))
+    cuenta= cuentaBancaria()
+    cuenta.apertura_cuenta(numeroCta, nombreCliente, fechaApertura, saldo)
+    
+elif opcion ==2
+if cuenta:
+  monto:float(input("Ingrese el que va a consignar: "))
+  cuenta.consignar(monto)
+else:
+  print("Primero debe de aperturar una cuenta")
+
+elif opcion== 4:
+if cuenta:
+  print(f "saldo actual: {cuenta.get_saldo()}")
+else:
+  print("Primero debe de aperturar una cuenta")
+elif opcion == 5:
+print("Gracias por utilizar nuestro servicios")
+break
+
+else:
+print("Opcion no valida. Intete de nuevo")
+
+#Ejecutar programa principal
+if__name__=="__main__":
+main()
   
         
   
